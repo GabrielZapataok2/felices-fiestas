@@ -11,10 +11,37 @@
 </head>
 
 <body>
+
+
     <div class="swiper">
-        <!-- Additional required wrapper -->
+        <!-- Parallax background element -->
+        <div class="parallax-bg" style="background-image:url(https://images.pexels.com/photos/7716946/pexels-photo-7716946.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)" data-swiper-parallax="-23%"></div>
         <div class="swiper-wrapper">
-            <!-- Slides -->
+            <div class="swiper-slide" id="slide-1">
+                <div class="background-parallax"></div>
+                <div class="text" data-swiper-parallax="-300" data-swiper-parallax-duration="600" data-swiper-parallax-scale="0.15" data-swiper-parallax-opacity="0.5">
+                    <h1>Contenido slide 1</h1>
+                </div>
+            </div>
+            <div class="swiper-slide" id="slide-2">
+                <div class="background-parallax"></div>
+                <div class="text" data-swiper-parallax="-300" data-swiper-parallax-duration="600" data-swiper-parallax-scale="0.15" data-swiper-parallax-opacity="0.5">
+                    <h1>Contenido slide 2</h1>
+                </div>
+            </div>
+            <div class="swiper-slide" id="slide-3">
+                <div class="background-parallax"></div>
+                <div class="text" data-swiper-parallax="-300" data-swiper-parallax-duration="600" data-swiper-parallax-scale="0.15" data-swiper-parallax-opacity="0.5">
+                    <h1>Contenido slide 3</h1>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+
+    <!-- <div class="swiper">
+        <div class="swiper-wrapper">
             <div class="swiper-slide" id="slide-1">
                 <h1>Slide 1</h1>
             </div>
@@ -25,15 +52,7 @@
                 <h1>Slide 3</h1>
             </div>
         </div>
-        <!-- If we need pagination -->
-        <div class="swiper-pagination"></div>
-
-        <!-- If we need navigation buttons -->
-        <!-- <div class="swiper-button-prev"></div> -->
-        <!-- <div class="swiper-button-next"></div> -->
-
-        <!-- If we need scrollbar -->
-        <!-- <div class="swiper-scrollbar"></div> -->
+         -->
     </div>
     <script src="swiper.js"></script>
     <audio src="music.mp3" autoplay></audio>
