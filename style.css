@@ -34,6 +34,10 @@
     background-color: #FFFFFFad;
     color: #034C6C;
 }
+#slide-5 .bg-overlay {
+    background-color: #6b95a7ad;
+    color: #FFFFFF;
+}
 .bg-overlay {
     width: 100%;
     height: 100%;
