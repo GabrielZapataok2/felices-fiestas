@@ -3,9 +3,10 @@ const swiper = new Swiper('.swiper', {
     direction: 'vertical',
     parallax: true,
     loop: true,
-    autoplay: {
-        delay: 5000,
-    },
+    autoplay: false,
+    // autoplay: {
+    //     delay: 5000,
+    // },
     // If we need pagination
     pagination: {
         el: '.swiper-pagination',
