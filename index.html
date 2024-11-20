@@ -19,15 +19,15 @@
     <div class="swiper">
         <div class="swiper-wrapper">
             <div class="swiper-slide" id="slide-1">
-                <img class="background-parallax" src="./assets/a0.png">
-                <img class="background-parallax" src="./assets/a1.png" data-swiper-parallax-scale="1.50">
+                <img class="background-parallax" src="./assets/images/a0.png">
+                <img class="background-parallax" src="./assets/images/a1.png" data-swiper-parallax-scale="1.50">
                 <div class="bg-overlay" data-swiper-parallax-scale="2.5">
-                    <img src="./assets/title.png" alt="" srcset="" style="max-width: 100%;">
+                    <img src="./assets/images/title.png" alt="" srcset="" style="max-width: 100%;">
                 </div>
             </div>
             <div class="swiper-slide" id="slide-2">
-                <img class="background-parallax" src="./assets/b0.png">
-                <img class="background-parallax" src="./assets/b1.png" data-swiper-parallax-y="30%">
+                <img class="background-parallax" src="./assets/images/b0.png">
+                <img class="background-parallax" src="./assets/images/b1.png" data-swiper-parallax-y="30%">
                 <div class="bg-overlay">
                     <div class="text" data-swiper-parallax-y="-50%" data-swiper-parallax-duration="1000" data-swiper-parallax-opacity="0">
                         <p>Para comenzar el nuevo año con energía y nuevas aventuras, te hacemos un regalo muy especial. Con él, podrás capturar cada sonrisa, momentos inolvidables, toda aventura que protagonices, y ¡llevar la emoción de cada experiencia a donde vayas!</p>
@@ -35,7 +35,7 @@
                 </div>
             </div>
             <div class="swiper-slide" id="slide-3">
-                <img class="background-parallax" src="./assets/d1.png" data-swiper-parallax-y="30%">
+                <img class="background-parallax" src="./assets/images/d1.png" data-swiper-parallax-y="30%">
                 <div class="bg-overlay">
                     <div class="text" data-swiper-parallax-y="-50%" data-swiper-parallax-duration="1000" data-swiper-parallax-opacity="0">
                         <h2>Queremos destacar y agradecerte  tu dedicación, esfuerzo y profesionalismo durante este año.</h2>
@@ -43,8 +43,8 @@
                 </div>
             </div>
             <div class="swiper-slide" id="slide-4">
-                <img class="background-parallax" src="./assets/b0.png">
-                <img class="background-parallax" src="./assets/b1.png" data-swiper-parallax-y="30%">
+                <img class="background-parallax" src="./assets/images/b0.png">
+                <img class="background-parallax" src="./assets/images/b1.png" data-swiper-parallax-y="30%">
                 <div class="bg-overlay">
                     <div class="text" data-swiper-parallax-y="-50%" data-swiper-parallax-duration="1000" data-swiper-parallax-opacity="0">
                         <h3>Gracias a tu trabajo y compromiso, hemos alcanzado nuevos logros y hemos crecido juntos como equipo.</h3>
@@ -52,8 +52,8 @@
                 </div>
             </div>
             <div class="swiper-slide" id="slide-5">
-                <img class="background-parallax" src="./assets/c0.png">
-                <img class="background-parallax" src="./assets/c1.png" data-swiper-parallax-y="30%">
+                <img class="background-parallax" src="./assets/images/c0.png">
+                <img class="background-parallax" src="./assets/images/c1.png" data-swiper-parallax-y="30%">
                 <div class="bg-overlay">
                     <div class="text" data-swiper-parallax-y="-50%" data-swiper-parallax-duration="1000" data-swiper-parallax-opacity="0">
                         <h2>¡Te deseamos un 2025 lleno de momentos felices!</h2>
@@ -63,15 +63,21 @@
                 </div>
             </div>
         </div>
+        <div class="ui">
+            <button id="unmuted" class="hidden"><img src="assets/icons/icon-1.svg" alt="unmuted" srcset=""></button>
+            <button id="muted" class=""><img src="assets/icons/icon-2.svg" alt="muted" srcset=""></button>
+            <button id="scroll" class="animation-button-scroll"><img src="assets/icons/icon-3.svg" alt="scroll" srcset=""></button>
+        </div>
         <div class="swiper-pagination"></div>
     </div>
     <div id="loading">
         <div class="loader"></div>
     </div>
+    
+    <audio src="assets/music/music.mp3"></audio>
     <script src="swiper.js"></script>
     <script src="loading.js"></script>
     <script src="music.js"></script>
-    <!-- <audio src="music.mp3" autoplay></audio> -->
 </body>
 
 </html>

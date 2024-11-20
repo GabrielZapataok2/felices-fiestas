@@ -13,7 +13,7 @@ const swiper = new Swiper('.swiper', {
     },
     // Navigation arrows
     navigation: {
-        // nextEl: '.swiper-button-next',
+        nextEl: '.animation-button-scroll',
         // prevEl: '.swiper-button-prev',
     },
     // And if we need scrollbar

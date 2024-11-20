@@ -66,10 +66,7 @@
 
 
 .text {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+
 }
 
 .text h1 {
@@ -113,8 +110,8 @@
 /* loading */
 /* HTML: <div class="loader"></div> */
 
-#loading.hidden {
-    display: none;
+.hidden {
+    display: none !important;
 }
 #loading {
     transition: .5s;
@@ -146,5 +143,36 @@
 
     100% {
         box-shadow: 19px 0 0 0, 38px 0 0 3px, 57px 0 0 7px
+    }
+}
+
+.ui {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 1;
+}
+.ui button {
+    all: unset;
+    width: 32px;
+    padding: 8px;
+    height: auto;
+    cursor: pointer;
+}
+
+
+.animation-button-scroll img {
+    animation: animation-button-scroll 1s infinite alternate;
+}
+
+@keyframes animation-button-scroll {
+    from {
+        transform: translateY(-5px);
+    }
+
+    to {
+        transform: translateY(5px);
     }
 }
