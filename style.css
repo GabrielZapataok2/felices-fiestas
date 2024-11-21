@@ -10,8 +10,7 @@
   height: 100dvh;
   height: 100svh;
 }
-
-.swiper-slide {
+.swiper .swiper-slide {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -37,36 +36,20 @@
   align-items: center;
   flex-direction: column;
   position: relative;
+  color: #FFFFFF;
 }
 
-#slide-1 .bg-overlay {
+#slide-1 .bg-overlay, #slide-4 .bg-overlay {
   background-color: rgba(255, 255, 255, 0.6784313725);
   color: #034C6C;
 }
 
-#slide-2 .bg-overlay {
+#slide-2 .bg-overlay, #slide-5 .bg-overlay {
   background-color: rgba(107, 149, 167, 0.6784313725);
-  color: #FFFFFF;
 }
 
-#slide-3 .bg-overlay {
+#slide-3 .bg-overlay, #slide-6 .bg-overlay {
   background-color: rgba(3, 77, 108, 0.6784313725);
-  color: #FFFFFF;
-}
-
-#slide-4 .bg-overlay {
-  background-color: rgba(255, 255, 255, 0.6784313725);
-  color: #034C6C;
-}
-
-#slide-5 .bg-overlay {
-  background-color: rgba(107, 149, 167, 0.6784313725);
-  color: #FFFFFF;
-}
-
-#slide-6 .bg-overlay {
-  background-color: rgba(3, 77, 108, 0.6784313725);
-  color: #FFFFFF;
 }
 
 /* Text style */
@@ -76,40 +59,27 @@
   font-weight: inherit;
   text-shadow: 2px 2px #613030;
 }
-
-/* .text .icon {
-    height: 1em;
-    transform: translateY(10%);
-} */
 .text .lightblue {
   color: rgb(155, 243, 255);
   font-family: inherit;
   font-weight: inherit;
   text-shadow: 2px 2px #305b61;
 }
-
-.text h1 {
-  font-size: 4rem;
-}
-
 .text h2 {
-  font-size: 2.6rem;
+  font-size: calc(2.6rem + 1vw);
 }
-
 .text h3 {
-  font-size: 2rem;
+  font-size: calc(2rem + 1vw);
 }
-
 .text p {
-  font-size: 1.5rem;
+  font-size: calc(1.5rem + 1vw);
 }
-
 .text > * {
   font-style: normal;
   text-align: center;
   margin-bottom: 1rem;
-  padding-inline-start: 1.5rem;
-  padding-inline-end: 1.5rem;
+  padding-inline-start: 1.6rem;
+  padding-inline-end: 1.6rem;
   font-family: "Sour Gummy", sans-serif;
   font-optical-sizing: auto;
 }
@@ -128,8 +98,7 @@
   left: 0;
   z-index: 1;
 }
-
-.loader {
+#loading .loader {
   color: #034C6C;
   width: 4px;
   aspect-ratio: 1;
@@ -148,7 +117,6 @@
   right: 10px;
   z-index: 1;
 }
-
 .ui button {
   all: unset;
   width: 32px;
@@ -156,8 +124,7 @@
   height: auto;
   cursor: pointer;
 }
-
-.animation-button-scroll img {
+.ui .animation-button-scroll img {
   animation: animation-button-scroll 1s infinite alternate;
 }
 
