@@ -66,13 +66,10 @@
   text-shadow: 2px 2px #305b61;
 }
 .text h2 {
-  font-size: calc(2.6rem + 1vw);
+  font-size: calc(2.4rem + 1vw);
 }
 .text h3 {
-  font-size: calc(2rem + 1vw);
-}
-.text p {
-  font-size: calc(1.5rem + 1vw);
+  font-size: calc(1.8rem + 1vw);
 }
 .text > * {
   font-style: normal;
