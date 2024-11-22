@@ -39,16 +39,16 @@
   color: #FFFFFF;
 }
 
-#slide-1 .bg-overlay, #slide-4 .bg-overlay {
+.bg-overlay.bg-white {
   background-color: rgba(255, 255, 255, 0.6784313725);
   color: #034C6C;
 }
 
-#slide-2 .bg-overlay, #slide-5 .bg-overlay {
+.bg-overlay.bg-lightblue {
   background-color: rgba(107, 149, 167, 0.6784313725);
 }
 
-#slide-3 .bg-overlay, #slide-6 .bg-overlay {
+.bg-overlay.bg-blue {
   background-color: rgba(3, 77, 108, 0.6784313725);
 }
 
