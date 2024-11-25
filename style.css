@@ -36,7 +36,8 @@
   align-items: center;
   flex-direction: column;
   position: relative;
-  color: #FFFFFF;
+  color: rgb(155, 243, 255);
+  text-shadow: 2px 2px #305b61;
 }
 
 .bg-overlay.bg-white {
@@ -53,32 +54,25 @@
 }
 
 /* Text style */
-.text .red {
-  color: rgb(255, 54, 54);
-  font-family: inherit;
-  font-weight: inherit;
-  text-shadow: 2px 2px #613030;
-}
-.text .lightblue {
-  color: rgb(155, 243, 255);
-  font-family: inherit;
-  font-weight: inherit;
-  text-shadow: 2px 2px #305b61;
-}
+
+
 .text h2 {
   font-size: calc(2.4rem + 1vw);
 }
 .text h3 {
   font-size: calc(1.8rem + 1vw);
 }
-.text > * {
-  font-style: normal;
+.text .spellsEffect *{
   text-align: center;
+  font-style: normal;
+  font-family: "Sour Gummy", sans-serif;
+  font-optical-sizing: auto;
+}
+.text > * {
   margin-bottom: 1rem;
   padding-inline-start: 1.6rem;
   padding-inline-end: 1.6rem;
-  font-family: "Sour Gummy", sans-serif;
-  font-optical-sizing: auto;
+  text-align: center;
 }
 
 /* loading */
