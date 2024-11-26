@@ -9,6 +9,7 @@
     height: 100vh;
     height: 100dvh;
     height: 100svh;
+
     .swiper-slide {
         display: flex;
         justify-content: center;
@@ -36,7 +37,8 @@
     align-items: center;
     flex-direction: column;
     position: relative;
-    color: #FFFFFF;
+    color: rgb(155, 243, 255);
+    text-shadow: 2px 2px #305b61;
 }
 
 .bg-overlay.bg-white {
@@ -62,29 +64,35 @@
         font-weight: inherit;
         text-shadow: 2px 2px #613030;
     }
+
     .lightblue {
         color: rgb(155, 243, 255);
         font-family: inherit;
         font-weight: inherit;
         text-shadow: 2px 2px #305b61;
     }
+
     h2 {
         font-size: calc(2.4rem + 1vw);
     }
+
     h3 {
         font-size: calc(1.8rem + 1vw);
     }
-    & > * {
-        font-style: normal;
-        text-align: center;
+
+    &>* {
         margin-bottom: 1rem;
         padding-inline-start: 1.6rem;
         padding-inline-end: 1.6rem;
+        text-align: center;
+    }
+    .spellsEffect *{
+        text-align: center;
+        font-style: normal;
         font-family: "Sour Gummy", sans-serif;
         font-optical-sizing: auto;
     }
 }
-
 
 
 /* loading */
@@ -101,6 +109,7 @@
     top: 0;
     left: 0;
     z-index: 1;
+
     .loader {
         color: #034C6C;
         width: 4px;
@@ -122,6 +131,7 @@
     bottom: 10px;
     right: 10px;
     z-index: 1;
+
     button {
         all: unset;
         width: 32px;
@@ -129,6 +139,7 @@
         height: auto;
         cursor: pointer;
     }
+
     .animation-button-scroll img {
         animation: animation-button-scroll 1s infinite alternate;
     }
@@ -154,6 +165,41 @@
     to {
         transform: translateY(5px);
     }
+}
+
+@keyframes parpadeo {
+    from {
+        opacity: 1;
+        transform: scale(1) rotate(0);
+    }
+
+    to {
+        opacity: 0;
+        transform: scale(1.8) rotate(-15deg);
+    }
+}
+
+@keyframes latido {
+    0% {
+        transform: scale(1);
+    }
+
+    10% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.stars {
+    object-fit: scale-down;
+    animation: parpadeo 1.2s infinite cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.latido {
+    animation: latido 1.2s infinite cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 
