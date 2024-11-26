@@ -12,7 +12,6 @@ const swiper = new Swiper('.swiper', {
     },
     on: {
         init: function () {
-            console.log('init');
             const paragraphs = document.querySelectorAll(".spellsEffect")
             console.log(paragraphs)
             paragraphs.forEach((t) => {
