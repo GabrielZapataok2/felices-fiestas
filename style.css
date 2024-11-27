@@ -64,26 +64,34 @@
 .text h3 {
   font-size: calc(1.8rem + 1vw);
 }
+.text h1 {
+  font-size: calc(3rem + 1vw);
+}
 .text > * {
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
   padding-inline-start: 1.6rem;
   padding-inline-end: 1.6rem;
   text-align: center;
+  line-height: 1;
 }
 .text .typo-1 * {
   font-family: "Irish Grover", system-ui;
 }
 .text .typo-2 * {
   font-family: "Festive", cursive;
-  font-style: normal;
-  line-height: 1;
-  font-size: calc(3rem + 1vw);
 }
 .text .typo-3 * {
   font-family: "Luckiest Guy", cursive;
 }
+.text .typo-4 * {
+  font-family: "Sour Gummy", serif;
+}
 .text .text-red {
   color: rgb(255, 80, 80);
+}
+.text .text-blue {
+  color: rgb(3, 77, 108);
+  text-shadow: 2px 2px rgb(155, 243, 255);
 }
 
 #loading {

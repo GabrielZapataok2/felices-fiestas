@@ -30,10 +30,10 @@ const swiper = new Swiper('.swiper', {
             var texts = swiper.slides[swiper.realIndex]
             texts.querySelectorAll(".spellsEffect span").forEach((span, index) => setTimeout(() => {
                 span.style.opacity = "1"
-                if (index > texts.dataset.startSpell && index < texts.dataset.endSpell) {
-                    span.style.color = "rgb(255,80,80)";
+                // if (index > texts.dataset.startSpell && index < texts.dataset.endSpell) {
+                //     span.style.color = "rgb(255,80,80)";
                     
-                }
+                // }
             }, index * 20) )
         }
     },

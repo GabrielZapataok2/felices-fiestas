@@ -77,31 +77,36 @@
         font-size: calc(1.8rem + 1vw);
     }
 
-    &>* {
-        margin-bottom: 1rem;
-        padding-inline-start: 1.6rem;
-        padding-inline-end: 1.6rem;
-        text-align: center;
-    }
-
-    .typo-1 * {
-        // font-family: "Sour Gummy", serif;
-        font-family: "Irish Grover", system-ui;
-    }
-
-    .typo-2 * {
-        font-family: "Festive", cursive;
-        font-style: normal;
-        line-height: 1;
+    h1 {
         font-size: calc(3rem + 1vw);
     }
 
+    & > * {
+        margin-bottom: .5rem;
+        padding-inline-start: 1.6rem;
+        padding-inline-end: 1.6rem;
+        text-align: center;
+        line-height: 1;
+    }
+
+    .typo-1 * {
+        font-family: "Irish Grover", system-ui;
+    }
+    .typo-2 * {
+        font-family: "Festive", cursive;
+    }
     .typo-3 * {
         font-family: "Luckiest Guy", cursive;
     }
-
+    .typo-4 * {
+        font-family: "Sour Gummy", serif;
+    }
     .text-red {
         color: rgb(255,80,80);
+    }
+    .text-blue {
+        color: rgb(3, 77, 108);
+        text-shadow: 2px 2px rgb(155, 243, 255);
     }
 }
 
