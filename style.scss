@@ -1,9 +1,20 @@
+// Generic
 * {
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+// Utilities
+.hidden {
+    display: none !important;
+}
+
+.scale-down {
+    object-fit: scale-down !important;
+}
+
+
+// Carousel
 .swiper {
     width: 100%;
     height: 100vh;
@@ -17,18 +28,19 @@
         flex-direction: column;
         overflow: hidden;
         position: relative;
+
+        .background-parallax {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            position: absolute;
+        }
     }
 }
 
 
-.background-parallax {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    position: absolute;
-}
-
+// Backgrounds
 .bg-overlay {
     width: 100%;
     height: 100%;
@@ -39,43 +51,24 @@
     position: relative;
     color: rgb(155, 243, 255);
     text-shadow: 2px 2px #305b61;
+
+    &.bg-white {
+        background-color: #FFFFFFad;
+        color: #034C6C;
+        text-shadow: 2px 2px #acf5ff;
+    }
+
+    &.bg-lightblue {
+        background: linear-gradient(rgba(107, 149, 167, .6), rgba(15, 64, 85, .6));
+    }
+
+    &.bg-blue {
+        background-color: #034d6cad;
+    }
 }
 
-#slide-4 .bg-overlay {
-    text-shadow: 2px 2px #acf5ff;
-}
-
-.bg-overlay.bg-white {
-    background-color: #FFFFFFad;
-    color: #034C6C;
-}
-
-.bg-overlay.bg-lightblue {
-    background: linear-gradient(rgba(107, 149, 167, .6), rgba(15, 64, 85, .6));
-}
-
-.bg-overlay.bg-blue {
-    background-color: #034d6cad;
-}
-
-
-/* Text style */
-
+// Texts
 .text {
-    .red {
-        color: rgb(255, 54, 54);
-        font-family: inherit;
-        font-weight: inherit;
-        text-shadow: 2px 2px #613030;
-    }
-
-    .lightblue {
-        color: rgb(155, 243, 255);
-        font-family: inherit;
-        font-weight: inherit;
-        text-shadow: 2px 2px #305b61;
-    }
-
     h2 {
         font-size: calc(2.4rem + 1vw);
     }
@@ -90,17 +83,29 @@
         padding-inline-end: 1.6rem;
         text-align: center;
     }
-    .spellsEffect *{
-        text-align: center;
+
+    .typo-1 * {
+        // font-family: "Sour Gummy", serif;
+        font-family: "Irish Grover", system-ui;
+    }
+
+    .typo-2 * {
+        font-family: "Festive", cursive;
         font-style: normal;
-        font-family: "Sour Gummy", sans-serif;
-        font-optical-sizing: auto;
+        line-height: 1;
+        font-size: calc(3rem + 1vw);
+    }
+
+    .typo-3 * {
+        font-family: "Luckiest Guy", cursive;
+    }
+
+    .text-red {
+        color: rgb(255,80,80);
     }
 }
 
-
-/* loading */
-
+// Loading
 #loading {
     transition: .5s;
     position: fixed;
@@ -121,13 +126,11 @@
         border-radius: 50%;
         box-shadow: 19px 0 0 7px, 38px 0 0 3px, 57px 0 0 0;
         transform: translateX(-38px);
-        animation: l21 .5s infinite alternate linear;
     }
 }
 
 
-/* User interface */
-
+// User interface
 .ui {
     display: flex;
     flex-direction: column;
@@ -143,14 +146,10 @@
         height: auto;
         cursor: pointer;
     }
-
-    .animation-button-scroll img {
-        animation: animation-button-scroll 1s infinite alternate;
-    }
 }
 
-/* Animations */
 
+// Animations
 @keyframes l21 {
     50% {
         box-shadow: 19px 0 0 3px, 38px 0 0 7px, 57px 0 0 3px
@@ -161,7 +160,7 @@
     }
 }
 
-@keyframes animation-button-scroll {
+@keyframes animationButtonScroll {
     from {
         transform: translateY(-5px);
     }
@@ -199,7 +198,6 @@
 
 @keyframes rotate {
     from {
-        
         transform: scale(1) rotate(0);
     }
 
@@ -220,11 +218,10 @@
     animation: rotate 16s infinite linear;
 }
 
-
-/* utilities */
-.hidden {
-    display: none !important;
+.animation-button-scroll img {
+    animation: animationButtonScroll 1s infinite alternate;
 }
-.scale-down {
-    object-fit: scale-down !important;
+
+.loader {
+    animation: l21 .5s infinite alternate linear;
 }

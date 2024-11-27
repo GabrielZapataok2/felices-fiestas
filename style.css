@@ -1,7 +1,15 @@
 * {
   margin: 0;
   box-sizing: border-box;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.scale-down {
+  -o-object-fit: scale-down !important;
+     object-fit: scale-down !important;
 }
 
 .swiper {
@@ -18,8 +26,7 @@
   overflow: hidden;
   position: relative;
 }
-
-.background-parallax {
+.swiper .swiper-slide .background-parallax {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
@@ -39,37 +46,18 @@
   color: rgb(155, 243, 255);
   text-shadow: 2px 2px #305b61;
 }
-
-#slide-4 .bg-overlay {
-  text-shadow: 2px 2px #acf5ff;
-}
-
 .bg-overlay.bg-white {
   background-color: rgba(255, 255, 255, 0.6784313725);
   color: #034C6C;
+  text-shadow: 2px 2px #acf5ff;
 }
-
 .bg-overlay.bg-lightblue {
   background: linear-gradient(rgba(107, 149, 167, 0.6), rgba(15, 64, 85, 0.6));
 }
-
 .bg-overlay.bg-blue {
   background-color: rgba(3, 77, 108, 0.6784313725);
 }
 
-/* Text style */
-.text .red {
-  color: rgb(255, 54, 54);
-  font-family: inherit;
-  font-weight: inherit;
-  text-shadow: 2px 2px #613030;
-}
-.text .lightblue {
-  color: rgb(155, 243, 255);
-  font-family: inherit;
-  font-weight: inherit;
-  text-shadow: 2px 2px #305b61;
-}
 .text h2 {
   font-size: calc(2.4rem + 1vw);
 }
@@ -82,14 +70,22 @@
   padding-inline-end: 1.6rem;
   text-align: center;
 }
-.text .spellsEffect * {
-  text-align: center;
+.text .typo-1 * {
+  font-family: "Irish Grover", system-ui;
+}
+.text .typo-2 * {
+  font-family: "Festive", cursive;
   font-style: normal;
-  font-family: "Sour Gummy", sans-serif;
-  font-optical-sizing: auto;
+  line-height: 1;
+  font-size: calc(3rem + 1vw);
+}
+.text .typo-3 * {
+  font-family: "Luckiest Guy", cursive;
+}
+.text .text-red {
+  color: rgb(255, 80, 80);
 }
 
-/* loading */
 #loading {
   transition: 0.5s;
   position: fixed;
@@ -110,10 +106,8 @@
   border-radius: 50%;
   box-shadow: 19px 0 0 7px, 38px 0 0 3px, 57px 0 0 0;
   transform: translateX(-38px);
-  animation: l21 0.5s infinite alternate linear;
 }
 
-/* User interface */
 .ui {
   display: flex;
   flex-direction: column;
@@ -129,11 +123,7 @@
   height: auto;
   cursor: pointer;
 }
-.ui .animation-button-scroll img {
-  animation: animation-button-scroll 1s infinite alternate;
-}
 
-/* Animations */
 @keyframes l21 {
   50% {
     box-shadow: 19px 0 0 3px, 38px 0 0 7px, 57px 0 0 3px;
@@ -142,7 +132,7 @@
     box-shadow: 19px 0 0 0, 38px 0 0 3px, 57px 0 0 7px;
   }
 }
-@keyframes animation-button-scroll {
+@keyframes animationButtonScroll {
   from {
     transform: translateY(-5px);
   }
@@ -191,12 +181,10 @@
   animation: rotate 16s infinite linear;
 }
 
-/* utilities */
-.hidden {
-  display: none !important;
+.animation-button-scroll img {
+  animation: animationButtonScroll 1s infinite alternate;
 }
 
-.scale-down {
-  -o-object-fit: scale-down !important;
-     object-fit: scale-down !important;
+.loader {
+  animation: l21 0.5s infinite alternate linear;
 }/*# sourceMappingURL=style.css.map */
