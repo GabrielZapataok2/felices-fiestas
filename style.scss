@@ -69,18 +69,6 @@
 
 // Texts
 .text {
-    h2 {
-        font-size: calc(2.4rem + 1vw);
-    }
-
-    h3 {
-        font-size: calc(1.8rem + 1vw);
-    }
-
-    h1 {
-        font-size: calc(3rem + 1vw);
-    }
-
     & > * {
         margin-bottom: .5rem;
         padding-inline-start: 1.6rem;
@@ -88,7 +76,18 @@
         text-align: center;
         line-height: 1;
     }
-
+    h2 {
+        font-size: calc(2.4rem + 1vw);
+    }
+    h3 {
+        font-size: calc(1.8rem + 1vw);
+    }
+    h1 {
+        font-size: calc(3rem + 1vw);
+    }
+    h4 {
+        font-size: calc(1.5rem + 1vw);
+    }
     .typo-1 * {
         font-family: "Irish Grover", system-ui;
     }
@@ -108,6 +107,10 @@
     .text-blue {
         color: rgb(5, 97, 136);
         text-shadow: 2px 2px rgb(155, 243, 255);
+    }
+    .text-lightblue {
+        color: rgb(114, 239, 255);
+        text-shadow: 2px 2px rgb(5, 97, 136);
     }
 }
 
