@@ -101,6 +101,12 @@
   color: rgb(114, 239, 255);
   text-shadow: 2px 2px rgb(5, 97, 136);
 }
+.text .year {
+  color: rgb(255, 80, 80);
+  text-shadow: 2px 2px #440000;
+  font-size: calc(5rem + 1vw);
+  line-height: 0.5;
+}
 
 #loading {
   transition: 0.5s;
